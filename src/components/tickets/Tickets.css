@@ -1,0 +1,249 @@
+Reset and Basic Styling
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* Grid System */
+/* .container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+} */
+
+/* .main-white-button {
+    display: inline-block;
+    background-color: #fff;
+    color: #2a2a2a;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-white-button:hover {
+    background-color: #2a2a2a;
+    color: #fff;
+} */
+
+.amazing-venues {
+    margin: 100px 0px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    /* Ensures content stays on one line */
+    justify-content: space-between;
+    /* Places left content and right content on opposite sides */
+    align-items: center;
+    /* Aligns items vertically */
+}
+
+.left-content {
+    flex: 1;
+    padding-right: 30px;
+    /* Space between left and right sections */
+}
+
+.right-content {
+    flex: 1;
+    max-width: 350px;
+    /* Prevents it from stretching too much */
+    text-align: left;
+}
+
+.right-content h5 {
+    font-size: 22px;
+    font-weight: 800;
+    color: #2a2a2a;
+    margin-bottom: 25px;
+}
+
+.right-content h5 i {
+    color: #2a2a2a;
+    margin-right: 5px;
+}
+
+.right-content span {
+    font-size: 14px;
+    color: #2a2a2a;
+    line-height: 25px;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 6px;
+}
+
+.text-button a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #2a2a2a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.map-images img {
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Venue Tickets */
+.venue-tickets {
+    margin: 0px 15px;
+}
+
+.venue-tickets .venue-item {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 23px;
+}
+
+.venue-item .thumb img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.venue-item .down-content {
+    background-color: #656c74;
+    position: relative;
+    display: inline-block;
+    z-index: 1;
+    width: 100%;
+}
+
+.venue-item .down-content .left-content {
+    width: 31%;
+    float: left;
+    background-color: rgba(124, 131, 139, 0.3);
+    height: 100%;
+    display: inline-block;
+    position: absolute;
+    z-index: 111;
+}
+
+.venue-item .down-content .left-content .main-white-button {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 50%;
+    margin-top: -22.5px;
+}
+
+.venue-item .down-content .right-content {
+    width: 64%;
+    margin-left: 5%;
+    float: right;
+}
+
+.venue-item .down-content .right-content h4 {
+    font-size: 22px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+.venue-item .down-content .right-content p {
+    color: #fff;
+    margin-top: 20px;
+    font-weight: 300;
+    padding-right: 30px;
+    margin-bottom: 20px;
+}
+
+.venue-item .down-content .right-content ul li {
+    display: inline-block;
+    color: #fff;
+    font-size: 16px;
+    margin-right: 20px;
+}
+
+.venue-item .down-content .right-content ul li i {
+    margin-right: 5px;
+}
+
+.venue-item .down-content .right-content .price {
+    background-color: rgba(124, 131, 139, 0.3);
+    display: inline-block;
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.venue-item .down-content .right-content .price span {
+    color: #fff;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.venue-item .down-content .right-content .price span em {
+    font-weight: 700;
+    font-size: 20px;
+    font-style: normal;
+}
+
+/* Coming Events */
+.coming-events {
+    background-color: #656c74;
+    padding: 120px 0px;
+    position: relative;
+}
+
+.coming-events .left-button {
+    text-align: center;
+    position: absolute;
+    width: 9%;
+    height: auto;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(124, 131, 139, 0.3);
+}
+
+.coming-events .left-button .main-white-button {
+    transform: rotate(-90deg);
+    position: absolute;
+    top: 50%;
+    margin-top: -22.5px;
+    /* margin-left: 10px; */
+}
+
+/* Event Item */
+.event-item .thumb img {
+    width: 90%;
+    overflow: hidden;
+    margin-left: 22px;
+}
+
+.event-item .down-content {
+        margin-left: 10px;
+    background-color: #fff;
+    padding: 30px;
+}
+
+.event-item .down-content h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #2a2a2a;
+    margin-bottom: 25px;
+}
+
+.event-item .down-content ul li {
+    font-size: 14px;
+    color: #2a2a2a;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+.event-item .down-content ul li:last-child {
+    margin-bottom: 0px;
+}
+
+.event-item .down-content ul li i {
+    width: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #858b93;
+    display: inline-block;
+}

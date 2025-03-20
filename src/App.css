@@ -1,0 +1,122 @@
+/* 
+---------------------------------------------
+global styles
+--------------------------------------------- 
+*/
+html,
+body {
+  background: #fff;
+  font-family: 'Poppins', sans-serif;
+}
+
+::selection {
+  background: #343a3e;
+  color: #fff;
+}
+
+::-moz-selection {
+  background: #343a3e;
+  color: #fff;
+}
+
+@media (max-width: 991px) {
+
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  .mobile-top-fix {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+
+  .mobile-bottom-fix {
+    margin-bottom: 30px;
+  }
+
+  .mobile-bottom-fix-big {
+    margin-bottom: 60px;
+  }
+}
+
+.section-heading {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.section-heading h2 {
+  font-size: 30px;
+  font-weight: 800;
+  color: #2a2a2a;
+  text-transform: capitalize;
+  letter-spacing: 0.5px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.section-heading img {
+  margin: 20px auto;
+}
+
+.dark-bg h2 {
+  color: #fff;
+}
+
+.dark-bg p {
+  color: #fff;
+}
+
+.main-white-button a {
+  display: inline-block;
+  font-size: 14px;
+  padding: 12px 18px;
+  background-color: #fff;
+  color: #2a2a2a;
+  text-align: center;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: all .3s;
+}
+
+.main-white-button a:hover {
+  opacity: 0.9;
+}
+
+.main-dark-button a {
+  display: inline-block;
+  font-size: 14px;
+  padding: 12px 18px;
+  background-color: #343a3e;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  text-transform: capitalize;
+  transition: all .3s;
+}
+
+.main-dark-button a:hover {
+  opacity: 0.9;
+}
+
+
+.text-button a {
+  font-size: 14px;
+  color: #7c838b;
+  transition: all .3s;
+}
+
+.text-button i {
+  font-size: 12px;
+  margin-left: 5px;
+  transition: all .5s;
+}
+
+.text-button a:hover {
+  color: #343a3e;
+}
+
+.text-button a:hover i {
+  margin-left: 8px;
+}
