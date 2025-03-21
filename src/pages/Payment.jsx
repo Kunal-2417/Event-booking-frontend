@@ -3,7 +3,7 @@ import { useNavigate ,useParams} from 'react-router-dom';
 import Preloader from '../components/Preloader';
 import { useAuth } from '../context/AuthProvider';
 import bgimg from '../assets/images/images/like-03.jpg';
-
+import API_BASE_URL from '../config';
 
 const Payment = () => {
     const { id } = useParams();
@@ -20,7 +20,7 @@ const Payment = () => {
         setError('');
 
         try {
-            const res = await fetch(`http://localhost:8000/auth/booking/confirm_payment/${id}/`, {
+            const res = await fetch(`${API_BASE_URL}/booking/confirm_payment/${id}/`, {
                 method: 'PATCH',
                 headers: {
                     Authorization: `Bearer ${token}`

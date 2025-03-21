@@ -5,7 +5,8 @@ import AdminDashboard from "./pages/Dashboard/AdminDashboard";
 import EventManagerDashboard from "./pages/Dashboard/EventManagerDashboard";
 import StaffDashboard from "./pages/Dashboard/StaffDashboard";
 import ClientDashboard from "./pages/Dashboard/ClientDashboard";
-import ProtectedRoute from "./components/protectedRoute";
+
+import ProtectedRoute from "./components/ProtectedRoute";
 import Dashboard from "./pages/Dashboard/Dashboard";
 import Home from "./pages/Home";
 import {AuthProvider} from "./context/AuthProvider"
